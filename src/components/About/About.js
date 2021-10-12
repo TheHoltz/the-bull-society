@@ -57,8 +57,8 @@ function About() {
                     color: 'white',
                     textDecoration: 'none',
                     fontSize: '1.5rem',
-                }} href={"https://www.linkedin.com/in/william-giani-01bb30178/"}>"The Bull Society" — William Giani &copy; 2021</motion.a>
-                <p style={{color: "darkgray", pointerEvents: 'none', fontSize: 12}}>Models by gelmi.com.br on Sketchfab</p>
+                }} href={"https://www.linkedin.com/in/william-giani-01bb30178/"}>"The Bull Society" <small>by William Giani.</small></motion.a>
+                <p style={{color: "darkgray", pointerEvents: 'none', fontSize: 12}}>Model by gelmi on Sketchfab</p>
                 <p style={{color: "darkgray", pointerEvents: 'none' , fontSize: 12}}>Royalty free music from https://www.FesliyanStudios.com</p>
             </div>
         </div>
