@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+// 1- Import canvas
+import { Canvas } from "@react-three/fiber";
+
+// 2- Import the model
+import Chest from "./components/Three/Chest";
+
+// 3- Suspense is needed for the model to be loaded
+import { Suspense } from "react";
+
+// 4- Custom lights definition
+import Lights from "./components/Three/Lights";
+
+// 5- Custom floor
+import Floor from "./components/Three/Floor";
+
+import { OrbitControls, softShadows } from "@react-three/drei";
+
+softShadows();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Canvas
+        colorManagement
+        shadows
+        camera={{ position: [-5, 4, 4], fov: 40 }}
+      >
+        <Lights />
+        <Suspense fallback={null}>
+          <Chest />
+
+          <Floor />
+          <OrbitControls />
+        </Suspense>
+      </Canvas>
+    </>
   );
 }
 
