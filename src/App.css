@@ -5,7 +5,8 @@
 }
 
 body {
-    background: linear-gradient(to right, #fff, #d1d1d1);
+    background: linear-gradient(to right, black, #000);
     overflow: hidden;
     margin: 0;
+    font-family: "Open Sans";
 }

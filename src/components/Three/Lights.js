@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 
 function Lights() {
+  const ref = useRef();
+
   return (
     <>
-      <fog attach="fog" args={["#fff", 0, 22]} />
-      <ambientLight intensity={0.4} />
+      <fog attach="fog" args={["#000", 0, 2000]} />
+
+      <ambientLight intensity={1} />
       <directionalLight
-        position={[-8, 16, -8]}
+        ref={ref}
+        position={[200, 200, 200]}
         intensity={0}
         castShadow
         shadow-mapSize-width={2048}
@@ -17,7 +21,7 @@ function Lights() {
         shadow-camera-top={10}
         shadow-camera-bottom={-10}
       />
-      <pointLight position={[0, 50, 0]} intensity={2} />
+      <pointLight position={[50, 500, 0]} intensity={2} />
     </>
   );
 }

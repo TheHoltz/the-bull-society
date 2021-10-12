@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/open-sans": "^4.5.1",
     "@react-three/drei": "^7.13.1",
     "@react-three/fiber": "^7.0.15",
+    "framer-motion": "^4.1.17",
     "react": "^17.0.2",
+    "react-animated-cursor": "^2.2.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "three": "^0.133.1"
