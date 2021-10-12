@@ -21,7 +21,7 @@ function Lights() {
         shadow-camera-top={10}
         shadow-camera-bottom={-10}
       />
-      <pointLight position={[50, 500, 0]} intensity={2} />
+      <pointLight position={[50, 500, 0]} intensity={5} />
     </>
   );
 }
